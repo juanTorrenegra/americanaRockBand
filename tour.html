@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -23,7 +24,7 @@
         theme: {
           extend: {
             colors: {
-              primary: "#8B4513",
+              primary: "darkgrey",
               secondary: "#D2B48C",
             },
             borderRadius: {
@@ -38,6 +39,7 @@
               full: "9999px",
               button: "8px",
             },
+            
           },
         },
       };
@@ -45,7 +47,7 @@
     <style>
       :where([class^="ri-"])::before { content: "\f3c2"; }
       body {
-          background-image: url('https://public.readdy.ai/ai/img_res/4cff54183021b1815181d08eed8e0183.jpg');
+          background-image: url("img/grungebg.png");
           background-size: cover;
           background-repeat: no-repeat;
           font-family: 'Special Elite', cursive;
@@ -56,21 +58,21 @@
       }
     </style>
   </head>
-  <body class="w-[375px] min-h-[762px] mx-auto bg-[#F8F3E9] overflow-x-hidden">
-    <nav class="fixed top-0 left-0 right-2 w-full bg-primary/90 backdrop-blur-sm z-50">
-      <div class="flex justify-between items-center px-4 py-3">
-        <h1 class="text-2xl text-white font-['Special_Elite']">AMERICANA</h1>
+  <body class="w-[375px] min-h-[762px] mx-auto bg-[#F8F000] overflow-x-hidden">
+    
+      <div class="flex justify-between items-center w-[auto] h-[140px] ">
         
+        <img src="img/rippaperLogo2.png" class="logo1">
         
         <button id="menuBtn" class="w-8 h-8 flex items-center justify-center">
           <i class="ri-menu-line text-white text-2xl"></i>
         </button>
       </div>
-    </nav>
+    
 
     <div
       id="mobileMenu"
-      class="fixed top-[56px] left-0 w-full h-screen bg-primary/95 backdrop-blur-sm z-40 transform translate-x-full transition-transform duration-300"
+      class="fixed top-[115px] left-0 w-full h-screen bg-primary/95 backdrop-blur-sm z-40 transform translate-x-full transition-transform duration-300"
     >
       <div class="flex flex-col space-y-4 p-6">
         <a href="index.html" class="text-white text-xl py-2 border-b border-white/20"
